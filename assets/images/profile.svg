@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+    <defs>
+        <clipPath id="fwiajmkkka">
+            <path data-name="사각형 6" style="fill:#2f2b3c" d="M0 0h108.571v105.745H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="ic/member 128*128">
+        <g data-name="그룹 6">
+            <g data-name="타원 2" style="fill:#191528;stroke:#1f1c2f;stroke-width:2px">
+                <circle cx="120" cy="120" r="120" style="stroke:none"/>
+                <circle cx="120" cy="120" r="119" style="fill:none"/>
+            </g>
+            <g data-name="ic/member 240*240">
+                <g data-name="그룹 3" transform="translate(65.714 65.714)" style="clip-path:url(#fwiajmkkka)">
+                    <path data-name="패스 3" d="m79.538 54.7-1.49-.788 1.07-1.3a32.164 32.164 0 1 0-49.655 0l1.072 1.3-1.493.788A54.243 54.243 0 0 0 0 101.366a4.37 4.37 0 0 0 8.74 0 45.317 45.317 0 0 1 28.976-41.032l.6-.244.563.311a32.631 32.631 0 0 0 30.814 0l.563-.311.6.244a45.317 45.317 0 0 1 28.974 41.032 4.37 4.37 0 0 0 8.74.017v-.017A54.239 54.239 0 0 0 79.538 54.7M69.334 50a22.98 22.98 0 0 1-30.087 0 23.429 23.429 0 1 1 30.087 0" style="fill:#2f2b3c"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

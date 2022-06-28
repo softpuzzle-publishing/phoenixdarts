@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phoenix darts</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/ui.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1 class="page-title">채팅</h1>
+            <div>
+                <button type="button" class="btn-search" aria-label="검색"><i class="icon-search"></i></button>
+                <button type="button" class="btn-chat-add ms-2" aria-label="채팅방 생성"><i class="icon-chat-add"></i></button>
+            </div>
+        </header>
+        <aside id="bottom">
+            <nav class="menu-bar">
+                <a href="friends_list.html" aria-label="친구"><i class="icon-person"></i></a>
+                <a href="chatting_list.html" aria-label="채팅" class="active"><i class="icon-chat"><span class="chat-count">15</span></i></a>
+            </nav>
+        </aside>
+        <main id="content">
+            <section>
+                <a href="javascript:;" class="chat">
+                    <div class="group count-2">
+                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name">킹다트클럽</div>
+                        <div class="chat-latest">다음주에 시작입니다.</div>
+                    </div>
+                    <div class="chat-time">
+                        <div class="time">오전 1:20</div>
+                        <div class="chat-count">17</div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="chat">
+                    <div class="group count-3">
+                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                        <div class="profile"><img src="assets/images/@profile2.jpg" alt=""></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name">킹다트클럽 <span>3</span></div>
+                        <div class="chat-latest">오늘은 힘들꺼 같네요. 미리 말씀을 드렸어야 했는데 죄송합니다. 다음에 뵙겠습니다!!!!!!</div>
+                    </div>
+                    <div class="chat-time">
+                        <div class="time">어제</div>
+                        <div class="chat-count">5</div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="chat">
+                    <div class="group count-4">
+                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                        <div class="profile"><img src="assets/images/@profile2.jpg" alt=""></div>
+                        <div class="profile"><img src="assets/images/@profile2.jpg" alt=""></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name">킹다트클럽 <span>4</span></div>
+                        <div class="chat-latest">오늘은 힘들꺼 같네요. 미리 말씀을 드렸어야 했는데 죄송합니다. 다음에 뵙겠습니다!!!!!!</div>
+                    </div>
+                    <div class="chat-time">
+                        <div class="time">4월 5일</div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="chat">
+                    <div class="group count-5">
+                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                        <div class="profile"><img src="assets/images/@profile2.jpg" alt=""></div>
+                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                        <div class="profile"><img src="assets/images/@profile2.jpg" alt=""></div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name">킹다트클럽 <span>5</span></div>
+                    </div>
+                    <div class="chat-time">
+                        <div class="time">2017.9.12</div>
+                    </div>
+                </a>
+            </section>
+        </main>
+    </div>
+    <div class="layer layer-chat-add" style="display:block">
+        <div class="layer-wrap">
+            <div class="layer-header">
+                <h1 class="layer-title">멤버 선택</h1>
+            </div>
+            <div class="layer-body">
+                <div class="search-area">
+                    <input type="text" placeholder="닉네임, 이름">
+                </div>
+                <section>
+                    <div class="section-title">즐겨찾기</div>
+                    <div class="member-select-item">
+                        <input type="checkbox" id="member1" class="custom-checkbox">
+                        <label for="member1" role="button" class="user">
+                            <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                            <div class="info">
+                                <div class="nickname">nickname</div>
+                                <div class="homeshop">tienda de cerveza Madrid</div>
+                            </div>
+                            <div class="state">
+                                <div class="now"><i class="icon-now"></i></div>
+                            </div>
+                            <span class="fake-checkbox"></span>
+                        </label>
+                    </div>
+                    <div class="member-select-item">
+                        <input type="checkbox" id="member2">
+                        <label for="member2" role="button" class="user">
+                            <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                            <div class="info">
+                                <div class="nickname">nickname</div>
+                                <div class="homeshop">tienda de cerveza Madrid</div>
+                            </div>
+                            <div class="state">
+                                <div class="now"><i class="icon-now"></i></div>
+                            </div>
+                            <span class="fake-checkbox"></span>
+                        </label>
+                    </div>
+                </section>
+                <section>
+                    <div class="section-title">친구</div>
+                    <a href="javascript:;" role="button" class="user">
+                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                        <div class="info">
+                            <div class="nickname">nickname</div>
+                            <div class="homeshop">tienda de cerveza Madrid</div>
+                        </div>
+                        <div class="state">
+                            <div class="now"><i class="icon-now"></i></div>
+                        </div>
+                        <div class="check">
+
+                        </div>
+                    </a>
+                </section>
+            </div>
+            <button type="button" class="btn-layer-close" aria-label="레이어 닫기"><i class="icon-x"></i></button>
+        </div>
+    </div>
+</body>
+</html>
