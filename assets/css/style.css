@@ -106,7 +106,7 @@ body {
 }
 
 .position-relative {
-  position: relative;
+  position: relative !important;
 }
 
 input[type=text] {
@@ -150,11 +150,11 @@ input[type=text]:focus {
 .page-title {
   font-size: 20px;
   font-weight: 700;
+  transform: translateY(1px);
 }
 
 .btn-back ~ .page-title {
   font-size: 18px;
-  margin-left: 15px;
 }
 
 #content {
@@ -213,6 +213,7 @@ input[type=text]:focus {
   line-height: 1;
   font-size: 11px;
   min-width: 20px;
+  text-align: center;
 }
 
 .section-title {
@@ -223,6 +224,12 @@ input[type=text]:focus {
 }
 
 .toggler {
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+
+.more {
   position: absolute;
   right: 0;
   top: 9px;
@@ -272,6 +279,9 @@ section + section {
   font-size: 15px;
   font-weight: 500;
   line-height: 1.3;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .homeshop {
@@ -427,9 +437,13 @@ section + section {
 }
 
 .chat .chat-name {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   transform: translateY(-2px);
+  line-height: 1.3;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .chat .chat-name span {
@@ -439,10 +453,11 @@ section + section {
 
 .chat .chat-info {
   flex: 1 1 auto;
+  min-width: 0;
 }
 
 .chat .chat-latest {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   color: #878699;
   overflow: hidden;
@@ -451,7 +466,7 @@ section + section {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   line-height: 1.38;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .chat .chat-count {
@@ -569,12 +584,14 @@ section + section {
   align-items: center;
   justify-content: center;
   flex: 0 0 60px;
+  padding: 0 20px;
 }
 
-.layer-header .layer-title {
+.layer-title {
   text-align: center;
   font-size: 18px;
   font-weight: 700;
+  transform: translateY(1px);
 }
 
 .layer-body {
@@ -591,16 +608,16 @@ section + section {
   line-height: 1;
   font-size: 14px;
   font-weight: 700;
+  color: #fff;
 }
 
-.btn-layer-ok.disabled {
+.btn-layer-ok[disabled] {
   color: #9093a4;
 }
 
 .btn-layer-ok strong {
   color: var(--bs-blue);
   margin-right: 3px;
-  font-size: 16px;
 }
 
 .btn-layer-close {
@@ -668,7 +685,7 @@ section + section {
   background-image: url("../images/icon-star-active.svg");
 }
 
-.search-area {
+.input-area {
   background: var(--bs-body-bg);
   position: fixed;
   left: 0;
@@ -678,13 +695,13 @@ section + section {
   z-index: 1;
 }
 
-.search-area input {
+.input-area input {
   width: 100%;
   background: var(--bs-body-bg);
   padding-right: 50px;
 }
 
-.search-area .btn-input-remove {
+.input-area .btn-input-remove {
   line-height: 1;
   position: absolute;
   right: 20px;
@@ -693,12 +710,17 @@ section + section {
 }
 
 .layer-chat-add .layer-body {
-  padding-top: 60px;
+  padding-top: 55px;
   position: relative;
 }
 
 .layer-chat-add.selected .layer-body {
   padding-top: 120px;
+}
+
+.layer-chat-naming .layer-body {
+  padding-top: 55px;
+  position: relative;
 }
 
 .select-item:first-of-type .user {
@@ -730,5 +752,146 @@ section + section {
 
 .selected-member {
   margin-bottom: 15px;
+}
+
+#root {
+  height: 100%;
+}
+
+.customized-app {
+  height: 100%;
+}
+
+/* sendbird chatting */
+.sendbird-theme--dark .sendbird-conversation {
+  background-color: #191528;
+}
+
+.sendbird-theme--dark .sendbird-chat-header {
+  background-color: #191528;
+}
+
+.sendbird-label--caption-2 {
+  color: #9396a7;
+  font-weight: 500;
+}
+
+.sendbird-thumbnail-message-item-body {
+  max-width: 320px;
+  min-width: 220px;
+}
+
+.sendbird-text-message-item-body {
+  border-radius: 10px;
+  padding-top: 6px;
+}
+
+.sendbird-file-message-item-body {
+  border-radius: 10px;
+}
+
+.sendbird-theme--dark .sendbird-file-message-item-body.outgoing {
+  background-color: #e1e2eb;
+}
+
+.sendbird-theme--dark .sendbird-icon-color--primary [class*='fill'] {
+  fill: #e1e2eb;
+}
+
+.sendbird-theme--dark .sendbird-text-message-item-body.outgoing {
+  background-color: #e1e2eb;
+  line-height: 1;
+}
+
+.sendbird-theme--dark .sendbird-text-message-item-body.mouse-hover.outgoing,
+.sendbird-theme--dark .sendbird-text-message-item-body:hover.outgoing {
+  background-color: #b1bdff;
+}
+
+.sendbird-theme--dark .sendbird-label--color-oncontent-1 {
+  color: #000;
+}
+
+.sendbird-theme--dark .sendbird-text-message-item-body.incoming {
+  background-color: #565568;
+  line-height: 1;
+}
+
+.sendbird-theme--dark .sendbird-text-message-item-body.mouse-hover.incoming,
+.sendbird-theme--dark .sendbird-text-message-item-body:hover.incoming {
+  background-color: #787793;
+}
+
+.sendbird-theme--dark .sendbird-label--color-onbackground-1 {
+  color: #fff;
+}
+
+.sendbird-theme--dark .sendbird-label--color-onbackground-2 {
+  color: #565568;
+  font-weight: 500;
+}
+
+.sendbird-message-content.outgoing .sendbird-message-content__left.use-reactions {
+  margin-right: 6px;
+}
+
+.sendbird-message-content.incoming .sendbird-message-content__right.use-reactions {
+  margin-left: 6px;
+}
+
+.sendbird-conversation__footer {
+  padding-bottom: 0;
+}
+
+.sendbird-message-input-wrapper .sendbird-message-input-wrapper__message-input {
+  padding: 0;
+  line-height: 1;
+}
+
+.sendbird-message-input .sendbird-message-input--textarea {
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.sendbird-message-input .sendbird-message-input--attach {
+  bottom: 12px;
+}
+
+.sendbird-theme--dark .sendbird-message-input .sendbird-message-input--textarea {
+  background-color: #fff;
+  border: 0 !important;
+  border-radius: 0;
+  color: #000;
+}
+
+.sendbird-theme--dark .sendbird-message-input .sendbird-message-input--textarea:focus {
+  color: #000;
+}
+
+.sendbird-theme--dark .sendbird-message-input .sendbird-message-input--placeholder {
+  color: #9396a7;
+  top: 15px;
+}
+
+.sendbird-theme--dark .sendbird-iconbutton .sendbird-iconbutton__inner svg {
+  vertical-align: top;
+}
+
+.sendbird-theme--dark .sendbird-icon-color--content-inverse [class*='fill'] {
+  fill: #565567;
+}
+
+.sendbird-theme--dark .sendbird-iconbutton:active .sendbird-icon-color--content-inverse [class*='fill'],
+.sendbird-theme--dark .sendbird-iconbutton:hover .sendbird-icon-color--content-inverse [class*='fill'] {
+  fill: #fff;
+}
+
+.sendbird-message-content.outgoing .sendbird-message-content__middle {
+  max-width: 68vw;
+}
+
+.sendbird-file-message-item-body__file-icon__icon svg {
+  vertical-align: top;
 }
 /*# sourceMappingURL=style.css.map */

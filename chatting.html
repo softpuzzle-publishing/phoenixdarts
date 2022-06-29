@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
+    <title>phoenix darts</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/ui.js" defer></script>
+</head>
+<body>
+    <div id="root">
+        <div class="customized-app">
+            <div class="sendbird-app__wrap">
+                <div class="sendbird-app__conversation-wrap">
+                    <div class="sendbird-conversation">
+                        <div class="sendbird-chat-header">
+                            <div class="sendbird-chat-header__left">
+                                <div class="sendbird-chat-header--avatar--group-channel sendbird-avatar" role="button" tabindex="0" style="height: 32px; width: 32px;">
+                                    <div class="sendbird-avatar--inner__four-child">
+                                        <div class="sendbird-avatar-img sendbird-image-renderer" style="width: 100%; min-width: 32px; max-width: 400px; height: 32px;">
+                                            <div class="sendbird-avatar-img--default" style="width: 32px; height: 32px;">
+                                                <div class=" sendbird-icon sendbird-icon-user sendbird-icon-color--content" role="button" tabindex="0" style="width: 18.4px; min-width: 18.4px; height: 18.4px; min-height: 18.4px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                        <path class="icon-user_svg__fill" d="M42.667 37.333c7.17 0 13.018 5.66 13.32 12.755l.013.579V56a2.667 2.667 0 01-5.315.311L50.667 56v-5.333c0-4.26-3.33-7.743-7.53-7.987l-.47-.013H21.333a8 8 0 00-7.986 7.53l-.014.47V56a2.667 2.667 0 01-5.316.311L8 56v-5.333c0-7.17 5.66-13.019 12.755-13.321l.578-.013h21.334zM32 5.333c7.364 0 13.333 5.97 13.333 13.334C45.333 26.03 39.363 32 32 32c-7.364 0-13.333-5.97-13.333-13.333 0-7.364 5.97-13.334 13.333-13.334zm0 5.334a8 8 0 100 16 8 8 0 000-16z" fill="#000" fill-rule="evenodd"></path>
+                                                    </svg></div>
+                                            </div><img class="sendbird-image-renderer__hidden-image-loader" src="" alt="Group Channel1">
+                                        </div>
+                                        <div class="sendbird-avatar-img sendbird-image-renderer" style="width: 100%; min-width: 32px; max-width: 400px; height: 32px;">
+                                            <div class="sendbird-avatar-img--default" style="width: 32px; height: 32px;">
+                                                <div class=" sendbird-icon sendbird-icon-user sendbird-icon-color--content" role="button" tabindex="0" style="width: 18.4px; min-width: 18.4px; height: 18.4px; min-height: 18.4px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                        <path class="icon-user_svg__fill" d="M42.667 37.333c7.17 0 13.018 5.66 13.32 12.755l.013.579V56a2.667 2.667 0 01-5.315.311L50.667 56v-5.333c0-4.26-3.33-7.743-7.53-7.987l-.47-.013H21.333a8 8 0 00-7.986 7.53l-.014.47V56a2.667 2.667 0 01-5.316.311L8 56v-5.333c0-7.17 5.66-13.019 12.755-13.321l.578-.013h21.334zM32 5.333c7.364 0 13.333 5.97 13.333 13.334C45.333 26.03 39.363 32 32 32c-7.364 0-13.333-5.97-13.333-13.333 0-7.364 5.97-13.334 13.333-13.334zm0 5.334a8 8 0 100 16 8 8 0 000-16z" fill="#000" fill-rule="evenodd"></path>
+                                                    </svg></div>
+                                            </div><img class="sendbird-image-renderer__hidden-image-loader" src="" alt="Group Channel1">
+                                        </div>
+                                        <div class="sendbird-avatar-img sendbird-image-renderer" style="width: 100%; min-width: 32px; max-width: 400px; height: 32px;">
+                                            <div class="sendbird-avatar-img--default" style="width: 32px; height: 32px;">
+                                                <div class=" sendbird-icon sendbird-icon-user sendbird-icon-color--content" role="button" tabindex="0" style="width: 18.4px; min-width: 18.4px; height: 18.4px; min-height: 18.4px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                        <path class="icon-user_svg__fill" d="M42.667 37.333c7.17 0 13.018 5.66 13.32 12.755l.013.579V56a2.667 2.667 0 01-5.315.311L50.667 56v-5.333c0-4.26-3.33-7.743-7.53-7.987l-.47-.013H21.333a8 8 0 00-7.986 7.53l-.014.47V56a2.667 2.667 0 01-5.316.311L8 56v-5.333c0-7.17 5.66-13.019 12.755-13.321l.578-.013h21.334zM32 5.333c7.364 0 13.333 5.97 13.333 13.334C45.333 26.03 39.363 32 32 32c-7.364 0-13.333-5.97-13.333-13.333 0-7.364 5.97-13.334 13.333-13.334zm0 5.334a8 8 0 100 16 8 8 0 000-16z" fill="#000" fill-rule="evenodd"></path>
+                                                    </svg></div>
+                                            </div><img class="sendbird-image-renderer__hidden-image-loader" src="" alt="Group Channel1">
+                                        </div>
+                                        <div class="sendbird-avatar-img sendbird-image-renderer" style="width: 100%; min-width: 32px; max-width: 400px; height: 32px;">
+                                            <div class="sendbird-avatar-img--default" style="width: 32px; height: 32px;">
+                                                <div class=" sendbird-icon sendbird-icon-user sendbird-icon-color--content" role="button" tabindex="0" style="width: 18.4px; min-width: 18.4px; height: 18.4px; min-height: 18.4px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                        <path class="icon-user_svg__fill" d="M42.667 37.333c7.17 0 13.018 5.66 13.32 12.755l.013.579V56a2.667 2.667 0 01-5.315.311L50.667 56v-5.333c0-4.26-3.33-7.743-7.53-7.987l-.47-.013H21.333a8 8 0 00-7.986 7.53l-.014.47V56a2.667 2.667 0 01-5.316.311L8 56v-5.333c0-7.17 5.66-13.019 12.755-13.321l.578-.013h21.334zM32 5.333c7.364 0 13.333 5.97 13.333 13.334C45.333 26.03 39.363 32 32 32c-7.364 0-13.333-5.97-13.333-13.333 0-7.364 5.97-13.334 13.333-13.334zm0 5.334a8 8 0 100 16 8 8 0 000-16z" fill="#000" fill-rule="evenodd"></path>
+                                                    </svg></div>
+                                            </div><img class="sendbird-image-renderer__hidden-image-loader" src="" alt="Group Channel1">
+                                        </div>
+                                    </div>
+                                </div><span class="sendbird-chat-header__left__title sendbird-label sendbird-label--h-2 sendbird-label--color-onbackground-1">Group Channel1</span><span class="sendbird-chat-header__left__subtitle sendbird-label sendbird-label--body-1 sendbird-label--color-onbackground-2"></span>
+                            </div>
+                            <div class="sendbird-chat-header__right"><button class="sendbird-chat-header__right__info sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                        <div class=" sendbird-icon sendbird-icon-info sendbird-icon-color--primary" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                <path class="icon-info_svg__fill" d="M32 2.667C48.2 2.667 61.333 15.8 61.333 32S48.2 61.333 32 61.333 2.667 48.2 2.667 32 15.8 2.667 32 2.667zM32 8C18.745 8 8 18.745 8 32s10.745 24 24 24 24-10.745 24-24S45.255 8 32 8zm1.667 21.333a1 1 0 011 1v14a1 1 0 01-1 1h-3.334a1 1 0 01-1-1v-14a1 1 0 011-1h3.334zm-1.667-8a2.667 2.667 0 110 5.334 2.667 2.667 0 010-5.334z" fill="#000" fill-rule="evenodd"></path>
+                                            </svg></div>
+                                    </span></button></div>
+                        </div>
+                        <div class="sendbird-conversation__messages">
+                            <div class="sendbird-conversation__scroll-container">
+                                <div class="sendbird-conversation__padding"></div>
+                                <div class="sendbird-conversation__messages-padding">
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class=" sendbird-separator">
+                                            <div class="sendbird-separator__left sendbird-color--onbackground-4--background-color"></div>
+                                            <div class="sendbird-separator__text"><span class="sendbird-label sendbird-label--caption-2 sendbird-label--color-onbackground-2">June 22, 2022</span></div>
+                                            <div class="sendbird-separator__right sendbird-color--onbackground-4--background-color"></div>
+                                        </div>
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">4:29 PM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body outgoing  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-oncontent-1">test</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class=" sendbird-separator">
+                                            <div class="sendbird-separator__left sendbird-color--onbackground-4--background-color"></div>
+                                            <div class="sendbird-separator__text"><span class="sendbird-label sendbird-label--caption-2 sendbird-label--color-onbackground-2">June 23, 2022</span></div>
+                                            <div class="sendbird-separator__right sendbird-color--onbackground-4--background-color"></div>
+                                        </div>
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">10:38 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body outgoing  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-oncontent-1">asdf</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">10:39 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body outgoing  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-oncontent-1">asdfasdf</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">10:41 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body outgoing  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-oncontent-1">asdfasdf</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class=" sendbird-separator">
+                                            <div class="sendbird-separator__left sendbird-color--onbackground-4--background-color"></div>
+                                            <div class="sendbird-separator__text"><span class="sendbird-label sendbird-label--caption-2 sendbird-label--color-onbackground-2">June 24, 2022</span></div>
+                                            <div class="sendbird-separator__right sendbird-color--onbackground-4--background-color"></div>
+                                        </div>
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">11:29 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body outgoing  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-oncontent-1">111111</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">11:30 AM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body outgoing  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-oncontent-1">22222</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class=" sendbird-separator">
+                                            <div class="sendbird-separator__left sendbird-color--onbackground-4--background-color"></div>
+                                            <div class="sendbird-separator__text"><span class="sendbird-label sendbird-label--caption-2 sendbird-label--color-onbackground-2">June 26, 2022</span></div>
+                                            <div class="sendbird-separator__right sendbird-color--onbackground-4--background-color"></div>
+                                        </div>
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">2:55 PM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body outgoing  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-oncontent-1">ggg</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">2:58 PM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-thumbnail-message-item-body outgoing  ">
+                                                        <div class="sendbird-thumbnail-message-item-body__thumbnail sendbird-image-renderer" style="width: 100%; min-width: 360px; max-width: 400px; height: 270px;">
+                                                            <div class="sendbird-image-renderer__image" style="width: 100%; min-width: 360px; max-width: 400px; height: 270px; position: absolute; background-repeat: no-repeat; background-position: center center; background-size: cover; background-image: url(&quot;https://file-ap-2.sendbird.com/c6620397a5be48429205f4b12943ec36.jpg?auth=vFT-ZSGOAlLJOcdg1ct7UvX83EWnmlQbeITpuDt3YOWcWyEVlD4l3HDYi9VriiuqxxUAllqAp7q-fQwF_7qTJQ&quot;);"></div><img class="sendbird-image-renderer__hidden-image-loader" src="https://file-ap-2.sendbird.com/c6620397a5be48429205f4b12943ec36.jpg?auth=vFT-ZSGOAlLJOcdg1ct7UvX83EWnmlQbeITpuDt3YOWcWyEVlD4l3HDYi9VriiuqxxUAllqAp7q-fQwF_7qTJQ" alt="image/jpeg">
+                                                        </div>
+                                                        <div class="sendbird-thumbnail-message-item-body__image-cover"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class=" sendbird-separator">
+                                            <div class="sendbird-separator__left sendbird-color--onbackground-4--background-color"></div>
+                                            <div class="sendbird-separator__text"><span class="sendbird-label sendbird-label--caption-2 sendbird-label--color-onbackground-2">June 27, 2022</span></div>
+                                            <div class="sendbird-separator__right sendbird-color--onbackground-4--background-color"></div>
+                                        </div>
+                                        <div class=" sendbird-admin-message"><span class="sendbird-admin-message__text sendbird-label sendbird-label--caption-2 sendbird-label--color-onbackground-2">안녕하세요 관리자</span></div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content incoming">
+                                            <div class="sendbird-message-content__left use-reactions incoming ">
+                                                <div class="sendbird-context-menu" style="display: inline;">
+                                                    <div class="sendbird-message-content__left__avatar sendbird-avatar" role="button" tabindex="0" style="height: 28px; width: 28px;">
+                                                        <div class="sendbird-avatar-img sendbird-image-renderer" style="width: 100%; min-width: 28px; max-width: 400px; height: 28px;">
+                                                            <div class="sendbird-avatar-img--default" style="width: 28px; height: 28px;">
+                                                                <div class=" sendbird-icon sendbird-icon-user sendbird-icon-color--content" role="button" tabindex="0" style="width: 16.1px; min-width: 16.1px; height: 16.1px; min-height: 16.1px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                        <path class="icon-user_svg__fill" d="M42.667 37.333c7.17 0 13.018 5.66 13.32 12.755l.013.579V56a2.667 2.667 0 01-5.315.311L50.667 56v-5.333c0-4.26-3.33-7.743-7.53-7.987l-.47-.013H21.333a8 8 0 00-7.986 7.53l-.014.47V56a2.667 2.667 0 01-5.316.311L8 56v-5.333c0-7.17 5.66-13.019 12.755-13.321l.578-.013h21.334zM32 5.333c7.364 0 13.333 5.97 13.333 13.334C45.333 26.03 39.363 32 32 32c-7.364 0-13.333-5.97-13.333-13.333 0-7.364 5.97-13.334 13.333-13.334zm0 5.334a8 8 0 100 16 8 8 0 000-16z" fill="#000" fill-rule="evenodd"></path>
+                                                                    </svg></div>
+                                                            </div><img class="sendbird-image-renderer__hidden-image-loader" src="" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle"><span class="sendbird-message-content__middle__sender-name sendbird-label sendbird-label--caption-2 sendbird-label--color-onbackground-2">TEST</span>
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body incoming  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-onbackground-1">asdfasdf</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "><span class="sendbird-message-content__right__created-at  sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">1:00 PM</span>
+                                                <div class="sendbird-message-content-menu   incoming">
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content incoming">
+                                            <div class="sendbird-message-content__left use-reactions incoming "></div>
+                                            <div class="sendbird-message-content__middle"><span class="sendbird-message-content__middle__sender-name sendbird-label sendbird-label--caption-2 sendbird-label--color-onbackground-2">TEST</span>
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body incoming  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-onbackground-1">zdsfasdfasdf</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions ">
+                                                <div class="sendbird-message-content-menu   incoming">
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content incoming">
+                                            <div class="sendbird-message-content__left use-reactions incoming ">
+                                                <div class="sendbird-context-menu" style="display: inline;">
+                                                    <div class="sendbird-message-content__left__avatar sendbird-avatar" role="button" tabindex="0" style="height: 28px; width: 28px;">
+                                                        <div class="sendbird-avatar-img sendbird-image-renderer" style="width: 100%; min-width: 28px; max-width: 400px; height: 28px;">
+                                                            <div class="sendbird-avatar-img--default" style="width: 28px; height: 28px;">
+                                                                <div class=" sendbird-icon sendbird-icon-user sendbird-icon-color--content" role="button" tabindex="0" style="width: 16.1px; min-width: 16.1px; height: 16.1px; min-height: 16.1px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                        <path class="icon-user_svg__fill" d="M42.667 37.333c7.17 0 13.018 5.66 13.32 12.755l.013.579V56a2.667 2.667 0 01-5.315.311L50.667 56v-5.333c0-4.26-3.33-7.743-7.53-7.987l-.47-.013H21.333a8 8 0 00-7.986 7.53l-.014.47V56a2.667 2.667 0 01-5.316.311L8 56v-5.333c0-7.17 5.66-13.019 12.755-13.321l.578-.013h21.334zM32 5.333c7.364 0 13.333 5.97 13.333 13.334C45.333 26.03 39.363 32 32 32c-7.364 0-13.333-5.97-13.333-13.333 0-7.364 5.97-13.334 13.333-13.334zm0 5.334a8 8 0 100 16 8 8 0 000-16z" fill="#000" fill-rule="evenodd"></path>
+                                                                    </svg></div>
+                                                            </div><img class="sendbird-image-renderer__hidden-image-loader" src="" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body incoming  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-onbackground-1">안녕하세요</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right chain-top use-reactions "><span class="sendbird-message-content__right__created-at  sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">1:01 PM</span>
+                                                <div class="sendbird-message-content-menu chain-top  incoming">
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">1:19 PM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-file-message-item-body outgoing  ">
+                                                        <div class="sendbird-file-message-item-body__file-icon">
+                                                            <div class="sendbird-file-message-item-body__file-icon__icon sendbird-icon sendbird-icon-file-document sendbird-icon-color--primary" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-file-document_svg__fill" d="M39.414 6.4a2.41 2.41 0 011.71.701l12.642 12.75c.407.41.634.953.634 1.516v29.765c0 3.542-4.342 6.468-8 6.468H16.16c-3.658 0-6.4-2.926-6.4-6.468L9.6 12.868c0-3.542 2.902-6.468 6.56-6.468zm3.331 35.173l-21.49.027-.147.005c-1.066.08-1.908 1.014-1.908 2.155 0 1.193.92 2.16 2.055 2.16l21.49-.027.147-.005c1.066-.08 1.908-1.014 1.908-2.155 0-1.193-.92-2.16-2.055-2.16zm0-8.533l-21.49.027-.147.005c-1.066.08-1.908 1.014-1.908 2.155 0 1.193.92 2.16 2.055 2.16l21.49-.027.147-.005c1.066-.08 1.908-1.014 1.908-2.155 0-1.193-.92-2.16-2.055-2.16zm-11.807-8.507h-9.6l-.153.006a2.15 2.15 0 00-1.985 2.154c0 1.193.957 2.16 2.138 2.16h9.6l.152-.005a2.152 2.152 0 001.985-2.155c0-1.193-.957-2.16-2.137-2.16z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div>
+                                                        <div class="sendbird-file-message-item-body__file-name sendbird-color--oncontent-1 sendbird-textbutton " role="button" tabindex="0"><span class="sendbird-file-message-item-body__file-name__text sendbird-label sendbird-label--body-1 sendbird-label--color-oncontent-1">testpdf.pdf</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">4:42 PM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body outgoing  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-oncontent-1">ㅣ</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class=" sendbird-separator">
+                                            <div class="sendbird-separator__left sendbird-color--onbackground-4--background-color"></div>
+                                            <div class="sendbird-separator__text"><span class="sendbird-label sendbird-label--caption-2 sendbird-label--color-onbackground-2">June 29, 2022</span></div>
+                                            <div class="sendbird-separator__right sendbird-color--onbackground-4--background-color"></div>
+                                        </div>
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">3:59 PM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body outgoing  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-oncontent-1">saadfasdf</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                    <div class="sendbird-msg-hoc sendbird-msg--scroll-ref  " style="margin-bottom: 2px;">
+                                        <div class="sendbird-message-hoc__message-content sendbird-message-content outgoing">
+                                            <div class="sendbird-message-content__left use-reactions outgoing ">
+                                                <div class="sendbird-message-content__left__created-at ">
+                                                    <div class=" sendbird-message-status">
+                                                        <div>
+                                                            <div class="sendbird-message-status__icon sendbird-icon sendbird-icon-done sendbird-icon-color--sent" role="button" tabindex="0" style="width: 16px; min-width: 16px; height: 16px; min-height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                    <path class="icon-done_svg__fill" d="M12.552 31.448a2.665 2.665 0 10-3.771 3.771l13.333 13.333a2.666 2.666 0 003.772 0L55.219 19.22a2.667 2.667 0 00-3.771-3.771L24 42.895 12.552 31.448z" fill="#000" fill-rule="evenodd"></path>
+                                                                </svg></div>
+                                                        </div><span class="sendbird-message-status__text sendbird-label sendbird-label--caption-3 sendbird-label--color-onbackground-2">4:04 PM</span>
+                                                    </div>
+                                                </div>
+                                                <div class="sendbird-message-content-menu use-reactions  outgoing">
+                                                    <div class="sendbird-message-content-menu__normal-menu sendbird-message-item-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-menu__trigger__icon sendbird-icon sendbird-icon-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-more_svg__fill" d="M32 45.333a5.333 5.333 0 110 10.666 5.333 5.333 0 010-10.666zM32 28a5.333 5.333 0 110 10.668A5.333 5.333 0 0132 28zm0-17.333c2.946 0 5.333 2.387 5.333 5.333S34.946 21.333 32 21.333 26.667 18.946 26.667 16s2.387-5.333 5.333-5.333z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                    <div class="sendbird-message-content-menu__reaction-menu sendbird-message-item-reaction-menu">
+                                                        <div class="sendbird-context-menu" style="display: inline;"><button class="sendbird-message-item-reaction-menu__trigger sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                                    <div class="sendbird-message-item-reaction-menu__trigger__icon sendbird-icon sendbird-icon-emoji-more sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 24px; min-width: 24px; height: 24px; min-height: 24px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                                            <path class="icon-emoji-more_svg__fill" d="M32.097 3.22c2.65 0 5.255.357 7.763 1.054a2.134 2.134 0 01-1.144 4.111 24.669 24.669 0 00-6.619-.899c-13.603 0-24.63 11.027-24.63 24.63s11.027 24.63 24.63 24.63 24.63-11.027 24.63-24.63c0-2.227-.295-4.413-.87-6.518a2.13 2.13 0 011.494-2.62 2.13 2.13 0 012.62 1.494 28.895 28.895 0 011.023 7.644c0 15.96-12.938 28.897-28.897 28.897-15.96 0-28.897-12.937-28.897-28.897C3.2 16.157 16.138 3.22 32.097 3.22zm10.705 34.792a2.133 2.133 0 012.024 2.808c-1.873 5.623-6.937 9.488-12.729 9.488-5.792 0-10.856-3.865-12.73-9.488a2.134 2.134 0 011.875-2.803l.15-.005h21.41zm-3.477 4.266H24.867l.294.382c1.539 1.887 3.718 3.113 6.115 3.342l.314.024.507.015c2.617 0 5.037-1.188 6.743-3.151l.193-.23.292-.382zM21.392 21.954c1.087 0 1.985.814 2.116 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.134-2.133zm21.41 0c1.088 0 1.985.814 2.117 1.866l.017.267v5.353a2.133 2.133 0 01-4.25.268l-.017-.268v-5.353c0-1.178.955-2.133 2.133-2.133zM54.853 0a.8.8 0 01.8.8v7.786h7.76a.8.8 0 01.8.8v2.667a.8.8 0 01-.8.8h-7.76v7.758a.8.8 0 01-.8.8h-2.666a.8.8 0 01-.8-.8v-7.758h-7.785a.8.8 0 01-.8-.8V9.387a.8.8 0 01.8-.8l7.784-.001V.8a.8.8 0 01.8-.8h2.667z" fill="#000" fill-rule="evenodd"></path>
+                                                                        </svg></div>
+                                                                </span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__middle">
+                                                <div class="sendbird-message-content__middle__body-container">
+                                                    <div class="sendbird-message-content__middle__message-item-body sendbird-text-message-item-body outgoing  "><span class="sendbird-text-message-item-body__message sendbird-label sendbird-label--body-1 sendbird-label--color-oncontent-1">테스트테스트테스트 테스트테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트 테스트테스트테스트테스트</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sendbird-message-content__right  use-reactions "></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sendbird-conversation__footer">
+                            <div class="sendbird-message-input-wrapper">
+                                <form class="sendbird-message-input-wrapper__message-input  ">
+                                    <div class="sendbird-message-input "><textarea class="sendbird-message-input--textarea" name="sendbird-message-input" maxlength="5000"></textarea><span class="sendbird-message-input--placeholder sendbird-label sendbird-label--body-1 sendbird-label--color-onbackground-3">Enter message</span><button class="sendbird-message-input--attach sendbird-iconbutton " type="button" style="height: 32px; width: 32px;"><span class="sendbird-iconbutton__inner">
+                                                <div class=" sendbird-icon sendbird-icon-attach sendbird-icon-color--content-inverse" role="button" tabindex="0" style="width: 20px; min-width: 20px; height: 20px; min-height: 20px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                                        <path class="icon-attach_svg__fill" d="M55.334 28.926l-24.506 23.34c-5.222 4.973-13.74 4.973-18.962 0-5.149-4.903-5.149-12.797 0-17.7l24.506-23.34c3.138-2.988 8.278-2.988 11.416 0 3.064 2.919 3.064 7.594 0 10.513L23.255 45.077c-1.055 1.005-2.815 1.005-3.87.001-.98-.933-.98-2.39 0-3.325l22.64-21.535a2.667 2.667 0 00-3.676-3.864L15.709 37.89a7.578 7.578 0 00-.001 11.05c3.113 2.966 8.11 2.966 11.224 0l24.533-23.338c5.272-5.021 5.272-13.217 0-18.238-5.197-4.95-13.573-4.95-18.77 0L8.187 30.704c-7.356 7.005-7.356 18.419 0 25.424 7.281 6.935 19.036 6.935 26.318 0l24.506-23.34a2.666 2.666 0 10-3.678-3.862z" fill="#000" fill-rule="evenodd"></path>
+                                                    </svg></div><input class="sendbird-message-input--attach-input" type="file">
+                                            </span></button></div>
+                                </form>
+                            </div>
+                            <div class="sendbird-conversation__footer__typing-indicator"><span class="sendbird-conversation__footer__typing-indicator__text sendbird-label sendbird-label--caption-2 sendbird-label--color-onbackground-2"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

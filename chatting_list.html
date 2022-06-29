@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1">
     <title>phoenix darts</title>
-    <link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/ui.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/ui.js" defer></script>
 </head>
 <body>
     <div id="wrap">
@@ -16,7 +16,12 @@
             <h1 class="page-title">채팅</h1>
             <div>
                 <button type="button" class="btn-search" aria-label="검색"><i class="icon-search"></i></button>
-                <button type="button" class="btn-chat-add ms-2" aria-label="채팅방 생성"><i class="icon-chat-add"></i></button>
+                <button type="button" class="btn-chat-add ms-3" aria-label="채팅방 생성"><i class="icon-chat-add"></i></button>
+                <script>
+                    document.querySelector('.btn-chat-add').addEventListener('click', function(){
+                        document.querySelector('.layer-chat-add').style.display = 'block';
+                    });
+                </script>
             </div>
         </header>
         <aside id="bottom">
@@ -27,12 +32,12 @@
         </aside>
         <main id="content">
             <section>
-                <a href="javascript:;" class="chat">
+                <a href="chatting.html" class="chat">
                     <div class="group count-2">
-                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                        <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                     </div>
                     <div class="chat-info">
-                        <div class="chat-name">킹다트클럽</div>
+                        <div class="chat-name">킹다트클럽킹다트클럽킹다트클럽킹다트클럽킹다트클럽</div>
                         <div class="chat-latest">다음주에 시작입니다.</div>
                     </div>
                     <div class="chat-time">
@@ -40,10 +45,10 @@
                         <div class="chat-count">17</div>
                     </div>
                 </a>
-                <a href="javascript:;" class="chat">
+                <a href="chatting.html" class="chat">
                     <div class="group count-3">
-                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
-                        <div class="profile"><img src="assets/images/@profile2.jpg" alt=""></div>
+                        <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
+                        <div class="profile"><img src="./assets/images/@profile2.jpg" alt=""></div>
                     </div>
                     <div class="chat-info">
                         <div class="chat-name">킹다트클럽 <span>3</span></div>
@@ -54,11 +59,11 @@
                         <div class="chat-count">5</div>
                     </div>
                 </a>
-                <a href="javascript:;" class="chat">
+                <a href="chatting.html" class="chat">
                     <div class="group count-4">
-                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
-                        <div class="profile"><img src="assets/images/@profile2.jpg" alt=""></div>
-                        <div class="profile"><img src="assets/images/@profile2.jpg" alt=""></div>
+                        <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
+                        <div class="profile"><img src="./assets/images/@profile2.jpg" alt=""></div>
+                        <div class="profile"><img src="./assets/images/@profile2.jpg" alt=""></div>
                     </div>
                     <div class="chat-info">
                         <div class="chat-name">킹다트클럽 <span>4</span></div>
@@ -68,12 +73,12 @@
                         <div class="time">4월 5일</div>
                     </div>
                 </a>
-                <a href="javascript:;" class="chat">
+                <a href="chatting.html" class="chat">
                     <div class="group count-5">
-                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
-                        <div class="profile"><img src="assets/images/@profile2.jpg" alt=""></div>
-                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
-                        <div class="profile"><img src="assets/images/@profile2.jpg" alt=""></div>
+                        <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
+                        <div class="profile"><img src="./assets/images/@profile2.jpg" alt=""></div>
+                        <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
+                        <div class="profile"><img src="./assets/images/@profile2.jpg" alt=""></div>
                     </div>
                     <div class="chat-info">
                         <div class="chat-name">킹다트클럽 <span>5</span></div>
@@ -85,48 +90,33 @@
             </section>
         </main>
     </div>
-    <div class="layer layer-chat-add selected" style="display:block"> <!-- 멤버 선택 되었을때만 selected 해주세요(상단 padding 조절 목적) -->
+    <div class="layer layer-chat-add selected" style="display:none"> <!-- 멤버 선택 되었을때만 selected 해주세요(상단 padding 조절 목적) -->
         <div class="layer-wrap">
             <div class="layer-header">
                 <h1 class="layer-title">멤버 선택</h1>
             </div>
             <div class="layer-body">
-                <div class="search-area">
+                <div class="input-area">
                     <!-- 선택된 멤버 -->
                     <div class="selected-member">
                         <div class="users-slider">
                             <a href="javascript:;" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="nickname">홍길동</div>
                                 <div class="delete"><i class="icon-delete"></i></div>
                             </a>
                             <a href="javascript:;" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="nickname">Nickname</div>
                                 <div class="delete"><i class="icon-delete"></i></div>
                             </a>
                             <a href="javascript:;" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="nickname">Nickname</div>
                                 <div class="delete"><i class="icon-delete"></i></div>
                             </a>
                             <a href="javascript:;" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
-                                <div class="nickname">Nickname</div>
-                                <div class="delete"><i class="icon-delete"></i></div>
-                            </a>
-                            <a href="javascript:;" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
-                                <div class="nickname">Nickname</div>
-                                <div class="delete"><i class="icon-delete"></i></div>
-                            </a>
-                            <a href="javascript:;" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
-                                <div class="nickname">Nickname</div>
-                                <div class="delete"><i class="icon-delete"></i></div>
-                            </a>
-                            <a href="javascript:;" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="nickname">Nickname</div>
                                 <div class="delete"><i class="icon-delete"></i></div>
                             </a>
@@ -135,25 +125,8 @@
                     <div class="position-relative">
                         <input type="text" placeholder="닉네임, 이름">
                         <button type="button" aria-label="검색어 삭제" class="btn-input-remove" style="display: none"><i class="icon-input-remove"></i></button>
-                        <!-- 검색 결과는 하단의 section 태그까지 지우고 .select-item만 나열해서 뿌려주세요 -->
+                        <!-- 검색 결과는 하단의 section 태그 두개 지우고 .select-item만 나열해서 뿌려주세요 -->
                     </div>
-                    <script>
-                        //삭제 버튼 노출
-                        let searchInput = document.querySelector('.search-area input');
-                        searchInput.addEventListener('keyup', function(e){
-                            if(this.value.length > 0){
-                                this.nextElementSibling.style.display = 'block';
-                            }else{
-                                this.nextElementSibling.style.display = 'none';
-                            }
-                        });
-                        //삭제 버튼 클릭
-                        let btnInputRemove = document.querySelector('.btn-input-remove');
-                        btnInputRemove.addEventListener('click', function(e){
-                            this.previousElementSibling.value = '';
-                            this.style.display = 'none';
-                        })
-                    </script>
                 </div>
                 <section>
                     <div class="section-title">즐겨찾기</div>
@@ -161,7 +134,7 @@
                         <div class="select-item">
                             <input type="checkbox" id="member1" class="custom-checkbox">
                             <label for="member1" role="button" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="info">
                                     <div class="nickname">nickname</div>
                                     <div class="homeshop">tienda de cerveza Madrid</div>
@@ -172,7 +145,7 @@
                         <div class="select-item">
                             <input type="checkbox" id="member2">
                             <label for="member2" role="button" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="info">
                                     <div class="nickname">nickname</div>
                                     <div class="homeshop">tienda de cerveza Madrid</div>
@@ -191,7 +164,7 @@
                         <div class="select-item">
                             <input type="checkbox" id="member2">
                             <label for="member2" role="button" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="info">
                                     <div class="nickname">nickname</div>
                                     <div class="homeshop">tienda de cerveza Madrid</div>
@@ -205,7 +178,7 @@
                         <div class="select-item">
                             <input type="checkbox" id="member2">
                             <label for="member2" role="button" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="info">
                                     <div class="nickname">nickname</div>
                                     <div class="homeshop">tienda de cerveza Madrid</div>
@@ -219,7 +192,7 @@
                         <div class="select-item">
                             <input type="checkbox" id="member2">
                             <label for="member2" role="button" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="info">
                                     <div class="nickname">nickname</div>
                                     <div class="homeshop">tienda de cerveza Madrid</div>
@@ -233,7 +206,7 @@
                         <div class="select-item">
                             <input type="checkbox" id="member2">
                             <label for="member2" role="button" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="info">
                                     <div class="nickname">nickname</div>
                                     <div class="homeshop">tienda de cerveza Madrid</div>
@@ -247,7 +220,7 @@
                         <div class="select-item">
                             <input type="checkbox" id="member2">
                             <label for="member2" role="button" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="info">
                                     <div class="nickname">nickname</div>
                                     <div class="homeshop">tienda de cerveza Madrid</div>
@@ -261,7 +234,7 @@
                         <div class="select-item">
                             <input type="checkbox" id="member2">
                             <label for="member2" role="button" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="info">
                                     <div class="nickname">nickname</div>
                                     <div class="homeshop">tienda de cerveza Madrid</div>
@@ -275,7 +248,7 @@
                         <div class="select-item">
                             <input type="checkbox" id="member2">
                             <label for="member2" role="button" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="info">
                                     <div class="nickname">nickname</div>
                                     <div class="homeshop">tienda de cerveza Madrid</div>
@@ -289,7 +262,7 @@
                         <div class="select-item">
                             <input type="checkbox" id="member2">
                             <label for="member2" role="button" class="user">
-                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
                                 <div class="info">
                                     <div class="nickname">nickname</div>
                                     <div class="homeshop">tienda de cerveza Madrid</div>
@@ -303,8 +276,55 @@
                     </div>
                 </section>
             </div>
-            <a href="javascript:;" class="btn-layer-ok disabled"><strong>1</strong> 확인</a> <!-- 1명 이상 선택되면 .disabled 삭제 -->
+            <!-- <button href="javascript:;" class="btn-layer-ok" disabled>확인</button> --> <!-- 멤버 선택 전 -->
+            <button href="javascript:;" class="btn-layer-ok"><strong>4</strong> 확인</button> <!-- 멤버 선택 후 -->
+            <script>
+                document.querySelector('.layer-chat-add .btn-layer-ok').addEventListener('click', function(){
+                    document.querySelector('.layer-chat-naming').style.display = 'block';
+                    document.querySelector('.layer-chat-naming .input-area input').focus();
+                })
+            </script>
             <button type="button" class="btn-layer-close" aria-label="레이어 닫기"><i class="icon-x"></i></button>
+        </div>
+    </div>
+    <div class="layer layer-chat-naming" style="display:none">
+        <div class="layer-wrap">
+            <div class="layer-header justify-content-start">
+                <button type="button" class="btn-back me-3" aria-label="뒤로"><i class="icon-back"></i></button>
+                <h1 class="layer-title">채팅방 이름</h1>
+            </div>
+            <div class="layer-body">
+                <div class="input-area">
+                    <div class="position-relative">
+                        <input type="text" placeholder="채팅방 이름을 지어주세요">
+                        <button type="button" aria-label="검색어 삭제" class="btn-input-remove" style="display: none"><i class="icon-input-remove"></i></button>
+                    </div>
+                </div>
+                <section>
+                    <h2 class="section-title">멤버</h2>
+                    <div class="section-body">
+                        <div class="users-slider">
+                            <a href="javascript:;" class="user">
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
+                                <div class="nickname">홍길동</div>
+                            </a>
+                            <a href="javascript:;" class="user">
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
+                                <div class="nickname">Nickname</div>
+                            </a>
+                            <a href="javascript:;" class="user">
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
+                                <div class="nickname">Nickname</div>
+                            </a>
+                            <a href="javascript:;" class="user">
+                                <div class="profile"><img src="./assets/images/@profile.jpg" alt=""></div>
+                                <div class="nickname">Nickname</div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <button href="javascript:;" class="btn-layer-ok" disabled>확인</button>
         </div>
     </div>
 </body>
