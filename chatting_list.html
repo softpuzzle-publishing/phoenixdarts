@@ -85,63 +85,225 @@
             </section>
         </main>
     </div>
-    <div class="layer layer-chat-add" style="display:block">
+    <div class="layer layer-chat-add selected" style="display:block"> <!-- 멤버 선택 되었을때만 selected 해주세요(상단 padding 조절 목적) -->
         <div class="layer-wrap">
             <div class="layer-header">
                 <h1 class="layer-title">멤버 선택</h1>
             </div>
             <div class="layer-body">
                 <div class="search-area">
-                    <input type="text" placeholder="닉네임, 이름">
+                    <!-- 선택된 멤버 -->
+                    <div class="selected-member">
+                        <div class="users-slider">
+                            <a href="javascript:;" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="nickname">홍길동</div>
+                                <div class="delete"><i class="icon-delete"></i></div>
+                            </a>
+                            <a href="javascript:;" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="nickname">Nickname</div>
+                                <div class="delete"><i class="icon-delete"></i></div>
+                            </a>
+                            <a href="javascript:;" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="nickname">Nickname</div>
+                                <div class="delete"><i class="icon-delete"></i></div>
+                            </a>
+                            <a href="javascript:;" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="nickname">Nickname</div>
+                                <div class="delete"><i class="icon-delete"></i></div>
+                            </a>
+                            <a href="javascript:;" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="nickname">Nickname</div>
+                                <div class="delete"><i class="icon-delete"></i></div>
+                            </a>
+                            <a href="javascript:;" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="nickname">Nickname</div>
+                                <div class="delete"><i class="icon-delete"></i></div>
+                            </a>
+                            <a href="javascript:;" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="nickname">Nickname</div>
+                                <div class="delete"><i class="icon-delete"></i></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <input type="text" placeholder="닉네임, 이름">
+                        <button type="button" aria-label="검색어 삭제" class="btn-input-remove" style="display: none"><i class="icon-input-remove"></i></button>
+                        <!-- 검색 결과는 하단의 section 태그까지 지우고 .select-item만 나열해서 뿌려주세요 -->
+                    </div>
+                    <script>
+                        //삭제 버튼 노출
+                        let searchInput = document.querySelector('.search-area input');
+                        searchInput.addEventListener('keyup', function(e){
+                            if(this.value.length > 0){
+                                this.nextElementSibling.style.display = 'block';
+                            }else{
+                                this.nextElementSibling.style.display = 'none';
+                            }
+                        });
+                        //삭제 버튼 클릭
+                        let btnInputRemove = document.querySelector('.btn-input-remove');
+                        btnInputRemove.addEventListener('click', function(e){
+                            this.previousElementSibling.value = '';
+                            this.style.display = 'none';
+                        })
+                    </script>
                 </div>
                 <section>
                     <div class="section-title">즐겨찾기</div>
-                    <div class="member-select-item">
-                        <input type="checkbox" id="member1" class="custom-checkbox">
-                        <label for="member1" role="button" class="user">
-                            <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
-                            <div class="info">
-                                <div class="nickname">nickname</div>
-                                <div class="homeshop">tienda de cerveza Madrid</div>
-                            </div>
-                            <div class="state">
-                                <div class="now"><i class="icon-now"></i></div>
-                            </div>
-                            <span class="fake-checkbox"></span>
-                        </label>
-                    </div>
-                    <div class="member-select-item">
-                        <input type="checkbox" id="member2">
-                        <label for="member2" role="button" class="user">
-                            <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
-                            <div class="info">
-                                <div class="nickname">nickname</div>
-                                <div class="homeshop">tienda de cerveza Madrid</div>
-                            </div>
-                            <div class="state">
-                                <div class="now"><i class="icon-now"></i></div>
-                            </div>
-                            <span class="fake-checkbox"></span>
-                        </label>
+                    <div class="section-body">
+                        <div class="select-item">
+                            <input type="checkbox" id="member1" class="custom-checkbox">
+                            <label for="member1" role="button" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="info">
+                                    <div class="nickname">nickname</div>
+                                    <div class="homeshop">tienda de cerveza Madrid</div>
+                                </div>
+                                <span class="fake-checkbox"></span>
+                            </label>
+                        </div>
+                        <div class="select-item">
+                            <input type="checkbox" id="member2">
+                            <label for="member2" role="button" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="info">
+                                    <div class="nickname">nickname</div>
+                                    <div class="homeshop">tienda de cerveza Madrid</div>
+                                </div>
+                                <div class="state">
+                                    <div class="now"><i class="icon-now"></i></div>
+                                </div>
+                                <span class="fake-checkbox"></span>
+                            </label>
+                        </div>
                     </div>
                 </section>
                 <section>
                     <div class="section-title">친구</div>
-                    <a href="javascript:;" role="button" class="user">
-                        <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
-                        <div class="info">
-                            <div class="nickname">nickname</div>
-                            <div class="homeshop">tienda de cerveza Madrid</div>
+                    <div class="section-body">
+                        <div class="select-item">
+                            <input type="checkbox" id="member2">
+                            <label for="member2" role="button" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="info">
+                                    <div class="nickname">nickname</div>
+                                    <div class="homeshop">tienda de cerveza Madrid</div>
+                                </div>
+                                <div class="state">
+                                    <div class="now"><i class="icon-now"></i></div>
+                                </div>
+                                <span class="fake-checkbox"></span>
+                            </label>
                         </div>
-                        <div class="state">
-                            <div class="now"><i class="icon-now"></i></div>
+                        <div class="select-item">
+                            <input type="checkbox" id="member2">
+                            <label for="member2" role="button" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="info">
+                                    <div class="nickname">nickname</div>
+                                    <div class="homeshop">tienda de cerveza Madrid</div>
+                                </div>
+                                <div class="state">
+                                    <div class="now"><i class="icon-now"></i></div>
+                                </div>
+                                <span class="fake-checkbox"></span>
+                            </label>
                         </div>
-                        <div class="check">
-
+                        <div class="select-item">
+                            <input type="checkbox" id="member2">
+                            <label for="member2" role="button" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="info">
+                                    <div class="nickname">nickname</div>
+                                    <div class="homeshop">tienda de cerveza Madrid</div>
+                                </div>
+                                <div class="state">
+                                    <div class="now"><i class="icon-now"></i></div>
+                                </div>
+                                <span class="fake-checkbox"></span>
+                            </label>
                         </div>
-                    </a>
+                        <div class="select-item">
+                            <input type="checkbox" id="member2">
+                            <label for="member2" role="button" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="info">
+                                    <div class="nickname">nickname</div>
+                                    <div class="homeshop">tienda de cerveza Madrid</div>
+                                </div>
+                                <div class="state">
+                                    <div class="now"><i class="icon-now"></i></div>
+                                </div>
+                                <span class="fake-checkbox"></span>
+                            </label>
+                        </div>
+                        <div class="select-item">
+                            <input type="checkbox" id="member2">
+                            <label for="member2" role="button" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="info">
+                                    <div class="nickname">nickname</div>
+                                    <div class="homeshop">tienda de cerveza Madrid</div>
+                                </div>
+                                <div class="state">
+                                    <div class="now"><i class="icon-now"></i></div>
+                                </div>
+                                <span class="fake-checkbox"></span>
+                            </label>
+                        </div>
+                        <div class="select-item">
+                            <input type="checkbox" id="member2">
+                            <label for="member2" role="button" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="info">
+                                    <div class="nickname">nickname</div>
+                                    <div class="homeshop">tienda de cerveza Madrid</div>
+                                </div>
+                                <div class="state">
+                                    <div class="now"><i class="icon-now"></i></div>
+                                </div>
+                                <span class="fake-checkbox"></span>
+                            </label>
+                        </div>
+                        <div class="select-item">
+                            <input type="checkbox" id="member2">
+                            <label for="member2" role="button" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="info">
+                                    <div class="nickname">nickname</div>
+                                    <div class="homeshop">tienda de cerveza Madrid</div>
+                                </div>
+                                <div class="state">
+                                    <div class="now"><i class="icon-now"></i></div>
+                                </div>
+                                <span class="fake-checkbox"></span>
+                            </label>
+                        </div>
+                        <div class="select-item">
+                            <input type="checkbox" id="member2">
+                            <label for="member2" role="button" class="user">
+                                <div class="profile"><img src="assets/images/@profile.jpg" alt=""></div>
+                                <div class="info">
+                                    <div class="nickname">nickname</div>
+                                    <div class="homeshop">tienda de cerveza Madrid</div>
+                                </div>
+                                <div class="state">
+                                    <div class="now"><i class="icon-now"></i></div>
+                                </div>
+                                <span class="fake-checkbox"></span>
+                            </label>
+                        </div>
+                    </div>
                 </section>
             </div>
+            <a href="javascript:;" class="btn-layer-ok disabled"><strong>1</strong> 확인</a> <!-- 1명 이상 선택되면 .disabled 삭제 -->
             <button type="button" class="btn-layer-close" aria-label="레이어 닫기"><i class="icon-x"></i></button>
         </div>
     </div>
