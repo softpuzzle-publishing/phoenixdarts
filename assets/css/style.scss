@@ -21,6 +21,7 @@ body{
 .icon-arr-right{width: 24px;height: 24px;background-image: url('../images/icon-arr-right.svg');}
 .icon-x{width: 24px;height: 24px;background-image: url('../images/icon-x.svg');}
 .icon-star{width: 24px;height: 24px;background-image: url('../images/icon-star.svg');}
+.icon-pencil{width: 24px;height: 24px;background-image: url('../images/icon-pencil.svg');}
 .icon-back{width: 24px;height: 24px;background-image: url('../images/icon-back.svg');}
 .icon-person-add{width: 24px;height: 24px;background-image: url('../images/icon-person-add.svg');}
 .icon-person-chat{width: 24px;height: 24px;background-image: url('../images/icon-person-chat.svg');}
@@ -194,10 +195,13 @@ section{
         .dm{margin-top: 20px;}
     }
     .btn-favorite{
-        position: absolute;right: 18px;top: 15px;
+        position: absolute;right: 18px;top: 16px;line-height: 1;
         &.active{
             .icon-star{background-image: url('../images/icon-star-active.svg');}
         }
+    }
+    .btn-edit{
+        position: absolute;right: 20px;top: 18px;line-height: 1;
     }
 }
 

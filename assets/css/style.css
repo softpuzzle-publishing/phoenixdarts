@@ -75,6 +75,12 @@ body {
   background-image: url("../images/icon-star.svg");
 }
 
+.icon-pencil {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/icon-pencil.svg");
+}
+
 .icon-back {
   width: 24px;
   height: 24px;
@@ -678,11 +684,19 @@ section + section {
 .layer-profile-detail .btn-favorite {
   position: absolute;
   right: 18px;
-  top: 15px;
+  top: 16px;
+  line-height: 1;
 }
 
 .layer-profile-detail .btn-favorite.active .icon-star {
   background-image: url("../images/icon-star-active.svg");
+}
+
+.layer-profile-detail .btn-edit {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  line-height: 1;
 }
 
 .input-area {
