@@ -1,18 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84">
     <defs>
-        <clipPath id="fwiajmkkka">
-            <path data-name="사각형 6" style="fill:#2f2b3c" d="M0 0h108.571v105.745H0z"/>
+        <clipPath id="xxt0qyueba">
+            <path data-name="사각형 6" style="fill:#9396a7" d="M0 0h38v37.011H0z"/>
         </clipPath>
     </defs>
-    <g data-name="ic/member 128*128">
+    <g data-name="그룹 202">
         <g data-name="그룹 6">
-            <g data-name="타원 2" style="fill:#191528;stroke:#1f1c2f;stroke-width:2px">
-                <circle cx="120" cy="120" r="120" style="stroke:none"/>
-                <circle cx="120" cy="120" r="119" style="fill:none"/>
+            <g data-name="타원 2" style="fill:#565568;stroke:#9396a7;stroke-width:2px">
+                <circle cx="42" cy="42" r="42" style="stroke:none"/>
+                <circle cx="42" cy="42" r="41" style="fill:none"/>
             </g>
-            <g data-name="ic/member 240*240">
-                <g data-name="그룹 3" transform="translate(65.714 65.714)" style="clip-path:url(#fwiajmkkka)">
-                    <path data-name="패스 3" d="m79.538 54.7-1.49-.788 1.07-1.3a32.164 32.164 0 1 0-49.655 0l1.072 1.3-1.493.788A54.243 54.243 0 0 0 0 101.366a4.37 4.37 0 0 0 8.74 0 45.317 45.317 0 0 1 28.976-41.032l.6-.244.563.311a32.631 32.631 0 0 0 30.814 0l.563-.311.6.244a45.317 45.317 0 0 1 28.974 41.032 4.37 4.37 0 0 0 8.74.017v-.017A54.239 54.239 0 0 0 79.538 54.7M69.334 50a22.98 22.98 0 0 1-30.087 0 23.429 23.429 0 1 1 30.087 0" style="fill:#2f2b3c"/>
+            <g data-name="ic/member 84*84">
+                <g data-name="그룹 3" transform="translate(23 23)" style="clip-path:url(#xxt0qyueba)">
+                    <path data-name="패스 3" d="m27.838 19.145-.521-.276.375-.455a11.257 11.257 0 1 0-17.379 0l.375.455-.522.276A18.985 18.985 0 0 0 0 35.478a1.53 1.53 0 0 0 3.059 0A15.861 15.861 0 0 1 13.2 21.117l.209-.085.2.109a11.421 11.421 0 0 0 10.785 0l.2-.109.21.085A15.861 15.861 0 0 1 34.94 35.478a1.53 1.53 0 0 0 3.06.006v-.006a18.984 18.984 0 0 0-10.162-16.333M24.267 17.5a8.043 8.043 0 0 1-10.531 0 8.2 8.2 0 1 1 10.531 0" style="fill:#9396a7"/>
                 </g>
             </g>
         </g>
