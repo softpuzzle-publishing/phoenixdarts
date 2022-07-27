@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+    <g data-name="icon/list/chack on lag">
+        <g data-name="타원 12" style="fill:#2b46e6;stroke:#2b46e6;stroke-width:4px">
+            <circle cx="64" cy="64" r="64" style="stroke:none"/>
+            <circle cx="64" cy="64" r="62" style="fill:none"/>
+        </g>
+        <path data-name="패스 19" d="M55.013 0 24.791 30.223 6.675 12.106 0 18.781l24.791 24.791 36.9-36.9z" transform="translate(32.084 41.516)" style="fill:#fff"/>
+    </g>
+</svg>

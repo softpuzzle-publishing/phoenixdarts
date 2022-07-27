@@ -768,6 +768,53 @@ section + section {
   margin-bottom: 15px;
 }
 
+.favorite-added-effect {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.favorite-added-effect img {
+  position: absolute;
+  left: 50%;
+  bottom: 160px;
+  margin-left: -32px;
+  width: 64px;
+  height: 64px;
+  opacity: 0;
+  border-radius: 50rem;
+  box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.15);
+}
+
+.favorite-added-effect.active {
+  display: block;
+}
+
+.favorite-added-effect.active img {
+  animation: added 1.7s .3s;
+}
+
+@keyframes added {
+  10% {
+    opacity: 1;
+  }
+  12% {
+    transform: scale(1.15);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 #root {
   height: 100%;
 }

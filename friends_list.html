@@ -154,5 +154,19 @@
             <button type="button" class="btn-layer-close" aria-label="레이어 닫기"><i class="icon-x"></i></button>
         </div>
     </div>
+    <div class="favorite-added-effect">
+        <img src="./assets/images/icon-favorite-check.svg" alt="">
+    </div>
+    <script>
+        // 즐겨찾기 피드백 effect
+        function favoriteAddedEffect() {
+            let effect = document.querySelector(".favorite-added-effect");
+            effect.classList.add("active");
+            setTimeout(function () {
+                effect.classList.remove("active");
+            }, 2200);
+        }
+        favoriteAddedEffect();
+    </script>
 </body>
 </html>
