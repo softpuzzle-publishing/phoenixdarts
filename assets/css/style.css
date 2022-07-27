@@ -117,7 +117,7 @@ body {
 
 input[type=text] {
   background: transparent;
-  border: 1px solid #565568;
+  border: 1px solid #4A4A5F;
   border-radius: 5px;
   height: 44px;
   font-size: 14px;
@@ -129,6 +129,10 @@ input[type=text] {
 
 input[type=text]:focus {
   border-color: #fff;
+}
+
+input[type=text]::placeholder {
+  color: #9396a7;
 }
 
 #wrap {
@@ -225,7 +229,7 @@ input[type=text]:focus {
 .section-title {
   font-size: 12px;
   font-weight: 500;
-  color: #6a697d;
+  color: #9396a7;
   margin-bottom: 15px;
 }
 
@@ -260,7 +264,7 @@ section.collapsed .section-body {
 }
 
 section + section {
-  border-top: 1px solid #1e1e24;
+  border-top: 1px solid #4a4a5f;
 }
 
 .profile {
@@ -293,7 +297,7 @@ section + section {
 .homeshop {
   font-size: 12px;
   font-weight: 500;
-  color: #6a697d;
+  color: #9396a7;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -465,7 +469,7 @@ section + section {
 .chat .chat-latest {
   font-size: 12px;
   font-weight: 500;
-  color: #878699;
+  color: #9396a7;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -888,7 +892,7 @@ section + section {
 }
 
 .sendbird-theme--dark .sendbird-label--color-onbackground-2 {
-  color: #565568;
+  color: #9396a7;
   font-weight: 500;
 }
 
